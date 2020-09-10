@@ -1,0 +1,1 @@
+# SmartNinja Homework #8 - first python
