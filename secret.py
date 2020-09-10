@@ -6,7 +6,7 @@
 
 import random
 
-secret = random.randrange(1, 100)
+secret = random.randint(1, 100)
 guess = 0
 guesses = 0
 
