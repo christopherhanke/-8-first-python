@@ -9,10 +9,10 @@ str_question = "How do you feel today"
 
 if name:
     print("Thank you, "+name+"!")
-    str_question = str_question + ", " + name + ": "
+    str_question = str_question + ", " + name + "? "
 else:
     print("That's okay, too.")
-    str_question = str_question + ": "
+    str_question = str_question + "? "
 
 mood = input(str_question)
 
@@ -24,6 +24,8 @@ elif mood == "sad":
     str_answer = "Oh, I'm sorry. Here, take a cookie."
 elif mood == "relaxed":
     str_answer = "That's nice. Sweet and calm, wins the day."
+elif mood == "sleepy":
+    str_answer = "I can see you yawning. You should get some rest."
 else:
     str_answer = "I don't recognize this mood. Sorry."
 

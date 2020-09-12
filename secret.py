@@ -13,7 +13,10 @@ guesses = 0
 print("Hello. Guess a number between 1 and 100.")
 
 while guess != secret:
-    guess = int(input("Your guess: "))
+    if guesses == 0:
+        guess = int(input("Your guess: "))
+    else:
+        guess = int(input("Your next gues: "))
     guesses = guesses + 1
     if guess < secret:
         print("Your guess is below the secret number.")
