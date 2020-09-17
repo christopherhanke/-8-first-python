@@ -17,7 +17,7 @@ while guess != secret:
         guess = int(input("Your guess: "))
     else:
         guess = int(input("Your next gues: "))
-    guesses = guesses + 1
+    guesses += 1
     if guess < secret:
         print("Your guess is below the secret number.")
     if guess > secret:
